@@ -112,24 +112,53 @@ for (let a = 0; a < array.length; a++) {
       }
   
        
-        
+      desaprobados(comisionA,comisionB,comisionC)
       
  
 
 
 function menornotadecomision(array:number[]=[]) {
-  let notamenor:any[]=new Array(array)
+  
+  let nota1:number;
+  nota1=0;
+  let nota2:number;
+  nota2=0;
+  let nota3:number;
+  nota3=0;
+  let nota4:number;
+  nota4=0;
+  let nota5:number;
+  nota5=0;
+
    for (let k = 0; k < array.length; k++) {
-  if (array[k]<6) {
-    for (let l = 0; l < notamenor.length; l++) {
-      notamenor[l]= array[k];
-      
+  if (array[k]===1) {
+   
+      nota1=array[k];
+    }else if(array[k]===2){
+      nota2=array[k];
+    }else if(array[k]===3){
+      nota3=array[k];
+    }else if(array[k]===4){
+      nota4=array[k];
+
+    }else if(array[k]===5){
+      nota5=array[k];
     }
  
    }
-   console.log("La nota menor de la comision es:" + notamenor)
+   if (nota1&&nota2&&nota3&&nota4&&nota5) {
+     console.log(nota1)
+   }else if(nota1&&nota2&&nota3&&nota4){
+    console.log(nota1)
+   }else if(nota1&&nota2&&nota3)
+   
+
+   }
+   
+
+   }
    return menornotadecomision
-}
+
 menornotadecomision(comisionA)
 
 
@@ -141,4 +170,3 @@ menornotadecomision(comisionA)
 
 
 
-desaprobados(comisionA,comisionB,comisionC)
