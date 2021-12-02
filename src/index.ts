@@ -164,10 +164,28 @@ function menornotadecomision(array:number[]=[]) {
      console.log("La nota menor es:" + nota3)
    }else if(nota3&&nota4){
      console.log("La nota menor es:" + nota3)
+   }else if(nota2&&nota4&&nota5){
+     console.log("La nota menor es:" + nota2)
    }else if(nota4&&nota5){
      console.log("La nota menor es:" + nota4)
+   }else if(nota1&&nota3){
+    console.log("La nota meno es:"+ nota1)
+   }else if(nota1&&nota4){
+    console.log("La nota meno es:"+ nota1)
+   }else if(nota1&&nota5){
+    console.log("La nota meno es:"+ nota1)
+   }else if(nota2&&nota4){
+    console.log("La nota meno es:"+ nota2)
+   }else if(nota2&&nota5){
+    console.log("La nota meno es:"+ nota2)
+   }else if(nota3&&nota5){
+    console.log("La nota meno es:"+ nota3)
+   }else if(nota2&&nota3){
+    console.log("La nota meno es:"+ nota2)
+   }else if(nota1&&nota2){
+    console.log("La nota meno es:"+ nota1)
    }else if(nota5){
-     console.log("La nota menor es:" + nota5)
+    console.log("La nota meno es:"+ nota5)
    }
    return menornotadecomision
 
@@ -181,7 +199,7 @@ function menornotadecomision(array:number[]=[]) {
 
 
 
-   menornotadecomision(comisionC)
+   menornotadecomision(comisionA)
 
 
 
